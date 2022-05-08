@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/videorowtext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="First select your courses"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:padding="20sp"
+    android:layout_margin="20dp"
+    android:textColor="@color/teal_200"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

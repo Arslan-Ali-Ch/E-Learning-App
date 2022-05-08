@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".discussionboardactivity"
+    android:background="@drawable/bg11"
+    android:paddingTop="40dp"
+    >
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click on specific message to reply"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/demo"
+        android:textColor="@color/abc"
+        android:textSize="20sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chatedit"
+        android:layout_below="@+id/demo"
+        android:id="@+id/chatlist"
+        />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imagechat"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="20dp"
+    android:background="@drawable/message"/>
+    <EditText
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatedit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imagechat"
+        android:layout_margin="10dp"
+        android:layout_alignBaseline="@+id/imagechat"
+        android:hint="Enter your message here"/>
+</RelativeLayout>

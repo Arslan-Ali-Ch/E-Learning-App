@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updatedelete"
+    android:background="@drawable/bg11">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:lines="2"
+        android:textColor="@color/purple_700"
+        android:hint="Title here"
+        android:textSize="30sp"
+        android:id="@+id/updatedeleteedittitle"/>
+    <EditText
+        android:layout_below="@id/updatedeleteedittitle"
+        android:textColor="@color/purple_700"
+        android:hint="Description here here"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:lines="5"
+        android:inputType="textMultiLine"
+        android:id="@+id/updatedeleteeditdesc"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/update"
+        android:layout_margin="80dp"
+        android:onClick="updatekro"/>
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:id="@+id/delete"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="80dp"
+        android:onClick="deletekro"/>
+
+</RelativeLayout>

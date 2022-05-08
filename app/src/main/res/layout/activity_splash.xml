@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtop">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/eapp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/eapp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eapp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/eapp"
+        android:text="_Learning"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/etext"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/eapp"
+        android:text="Wellcome to E_learning app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:lineHeight="45dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
